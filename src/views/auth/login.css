@@ -1,0 +1,19 @@
+.auth-modal-content-container .modal-form-control,
+.nftModal-content-container .modal-form-control {
+  background: rgba(60, 130, 248, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #122a5412 inset !important;
+}

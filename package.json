@@ -1,0 +1,67 @@
+{
+  "name": "delivery_service",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@reduxjs/toolkit": "^1.8.2",
+    "env-cmd": "^10.1.0",
+    "formik": "^2.2.9",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^17.0.2",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "uuid": "^8.3.2",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "analyze:webpack": "webpack-bundle-analyzer build/bundle-stats.json",
+    "build:stats": "react-scripts build --stats",
+    "start": "env-cmd -f .env.development react-scripts start",
+    "build": "react-scripts build",
+    "build-no-sourcemap": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
+    "build:developement": "env-cmd -f .env.development react-scripts build",
+    "build:staging": "env-cmd -f .env.staging react-scripts build",
+    "build:production": "env-cmd -f .env.production npm run build-no-sourcemap",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/googlemaps": "^3.43.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "prettier": "^2.7.1",
+    "webpack-bundle-analyzer": "^4.5.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint",
+      "pretty-quick — staged",
+      "git add"
+    ]
+  }
+}
